@@ -1,6 +1,6 @@
 body {
     font-family: "Raleway", sans-serif;
-    background: black;
+    background: pink;
 }
 
 .navbar {
@@ -19,7 +19,8 @@ body {
 }
 
 #showcase {
-    background: url("media/video-1599785729.mp4")
+    background: url("../media/video-1599785729.mp4") bottom center / cover no-repeat;
+    min-height: 750px;
 }
 
 
