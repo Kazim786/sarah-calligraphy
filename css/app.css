@@ -7793,7 +7793,7 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: cursive;
   background: pink; }
 
 .navbar {
@@ -7809,6 +7809,8 @@ body {
 #showcase {
   background: url("../media/video-1599785729.mp4") bottom center/cover no-repeat;
   min-height: 750px; }
+  #showcase h1 {
+    font-family: cursive; }
 
 @media (max-width: 760px) {
   .navbar {
