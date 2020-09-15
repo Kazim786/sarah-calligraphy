@@ -13,7 +13,7 @@ body {
     border-bottom: 1px solid white; }
 
 #showcase {
-  background: url("../media/video-1599785729.mp4") bottom center/cover no-repeat;
+  background: url("media/video-1599785729.mp4") bottom center/cover no-repeat;
   min-height: 750px; }
   #showcase h1 {
     font-family: cursive;
