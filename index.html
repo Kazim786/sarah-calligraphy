@@ -15,17 +15,37 @@
 <body>
     <style>
         video.fullscreen { 
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        min-width: 100%;
-        min-height: 100%;
-        width: auto;
-        height: auto;
-        z-index: -100;
-        transform: translate(-50%, -50%);
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -100;
+            transform: translate(-50%, -50%);
         }
-        </style>
+
+        .bg_video {
+            width: 100%;
+            height: 750px;
+            object-fit: cover;
+        }
+        
+        .wrapper {
+            position: relative;
+            display: inline-block;
+        }
+
+        .video_wrapper {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 500px;
+            z-index: -1;
+        }
+    </style>
     <!-- <div class="video-header wrap">
         <div class="fullscreen-video-wrap">
             <video src="./media/video-1599785729.mp4" preload="auto" autoplay= "autoplay" loop></video>
@@ -69,13 +89,12 @@
                 </ul>
             </div>
         </nav>
-
-        <section id="showcase" class="d-flex justify-content-center align-items-center">
-            <video
-    src="./media/video-1599785729.mp4"
-    autoplay preload="auto" loop />
-            <div class="overlay"></div>
-            <div id="header" class="container text-white text-center">
+        <section id="showcase" class="d-flex justify-content-center align-items-center wrapper">            
+            <div class="video_wrapper">
+                <video src="./media/video-1599785729.mp4" autoplay preload="auto" loop class="bg_video" />
+            </div>
+            <div id="overlay"></div>
+            <div id="header" class="container text-black text-center">
                 <h3 class="display-5 mb-0">LOREM IPSUM</h3>
                 <h1 class="display-1">Lorem Ipsum</h1>
                 <br>

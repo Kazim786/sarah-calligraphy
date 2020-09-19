@@ -3,7 +3,11 @@ body {
   background: pink; }
 
 .navbar {
-  font-weight: 100; }
+  font-weight: 100;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0; }
   .navbar .navbar-brand h3 {
     font-weight: 100; }
   .navbar .nav-item {
@@ -14,7 +18,19 @@ body {
 
 #showcase {
   background: url("media/video-1599785729.mp4") bottom center/cover no-repeat;
-  min-height: 750px; }
+  min-height: 750px;
+  position: relative; }
+  #showcase #header {
+    z-index: 2; }
+  #showcase #overlay {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    z-index: 1; }
   #showcase h1 {
     font-family: cursive;
     line-height: 1; }
